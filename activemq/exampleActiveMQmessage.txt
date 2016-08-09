@@ -1,0 +1,20 @@
+"<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<CopterInertialState xmlns="http://www.ngc.com/quad/quadlink/icd">
+		<SourceID>Blue:AV1</SourceID>
+		<XYZPosition>
+			<X>1.4325599999999936</X>
+			<Y>-1.4111447129824352E-31</Y>
+			<Z>3.0423696090443118</Z>
+		</XYZPosition>
+			<Heading>-1.570796326794897</Heading>
+			<Velocity>
+				<X>6.226485993465773E-15</X>
+				<Y>4.477592830690359E-47</Y>
+				<Z>0.0</Z>
+			</Velocity>
+			<Attitude>
+				<Yaw>-1.570796326794897</Yaw>
+				<Pitch>-7.556980322266773E-46</Pitch>
+				<Roll>-4.1304660409108706E-30</Roll>
+				</Attitude>
+	</CopterInertialState>"

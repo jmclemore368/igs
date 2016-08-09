@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<config>
+
+<!--Should we have waypoints/copters superclasses or just contain all in config?
+	Superclass easier to organize
+	but requires root.find() instead root.findall in parse.py   -->
+	<waypoints>
+    <!--
+		<waypoint id="center">
+			<type>drop</type>
+			<x>0</x>
+			<y>0</y>
+			<z>2</z>
+			<heading>180</heading>				
+		</waypoint>
+    -->
+		<waypoint id="d1">
+			<type>drop</type>
+			<x>1.88</x>
+			<y>2.82</y>
+			<z>2</z>
+			<heading>270</heading>				
+		</waypoint>
+
+		<waypoint id="d2">
+			<type>drop</type>
+			<x>1.88</x>
+			<y>-1.14</y>
+			<z>2</z>
+			<heading>270</heading>				
+		</waypoint>
+
+		<waypoint id="d3">
+			<type>drop</type>
+			<x>1.88</x>
+			<y>-4.8</y>
+			<z>2</z>
+			<heading>270</heading>				
+		</waypoint>
+        
+        <waypoint id="b1">
+			<type>block</type>
+			<x>3</x>
+			<y>3.05</y>
+			<z>2</z>
+			<heading>270</heading>				
+		</waypoint>
+        
+        <waypoint id="b2">
+			<type>block</type>
+			<x>3</x>
+			<y>0</y>
+			<z>2</z>
+			<heading>270</heading>				
+		</waypoint>
+        
+        <waypoint id="b3">
+			<type>block</type>
+			<x>3</x>
+			<y>-3.05</y>
+			<z>2</z>
+			<heading>270</heading>				
+		</waypoint>
+	</waypoints>
+
+	<copters>
+		<copter id="Soar1ng:1">
+			<enabled>0</enabled> <!-- 0 if not enabled, 1 if enabled -->
+			<type>real</type>  <!-- sitl for simulation, real for actual copter -->
+			<slot>1</slot> <!-- integer representing the slot number the copter should occupy -->
+			<dx>1</dx>
+			<dy>1</dy>
+			<dz>1</dz>
+			<connect>COM7,57600</connect> <!-- tcp:192.168.0.6:5760 -->	
+			<adsb>1</adsb> <!-- 0 if disabled, 1 if enabled -->
+		</copter>
+
+		<copter id="Soar1ng:2">
+			<enabled>0</enabled>
+			<type>real</type>  <!-- sitl for simulation, real for actual copter -->
+			<slot>2</slot>
+			<dx>1</dx>
+			<dy>1</dy>
+			<dz>1</dz>
+			<connect>COM7,57600</connect> <!-- tcp:192.168.0.6:5760 -->	
+			<adsb>1</adsb> <!-- 0 if disabled, 1 if enabled -->
+		</copter>
+
+		<copter id="Soar1ng:3">		
+			<enabled>0</enabled>
+			<type>real</type>  <!-- sitl for simulation, real for actual copter -->
+			<slot>3</slot>
+			<dx>1</dx>
+			<dy>1</dy>
+			<dz>1</dz>
+			<connect>COM7,57600</connect> <!-- tcp:192.168.0.6:5760 -->	
+			<adsb>1</adsb> <!-- 0 if disabled, 1 if enabled -->
+		</copter>
+        <copter id="Soar1ng:4">		
+			<enabled>0</enabled>
+			<type>real</type>  <!-- sitl for simulation, real for actual copter -->
+			<slot>4</slot>
+			<dx>1</dx>
+			<dy>1</dy>
+			<dz>1</dz>
+			<connect>COM7,57600</connect> <!-- tcp:192.168.0.6:5760 -->	
+			<adsb>1</adsb> <!-- 0 if disabled, 1 if enabled -->
+		</copter>
+        <copter id="Soar1ng:5">		
+			<enabled>0</enabled>
+			<type>real</type>  <!-- sitl for simulation, real for actual copter -->
+			<slot>5</slot>
+			<dx>1</dx>
+			<dy>1</dy>
+			<dz>1</dz>
+			<connect>COM9,57600</connect> <!-- tcp:192.168.0.6:5760 -->	
+			<adsb>1</adsb> <!-- 0 if disabled, 1 if enabled -->
+		</copter>
+        <copter id="Soar1ng:6">		
+			<enabled>0</enabled>
+			<type>real</type>  <!-- sitl for simulation, real for actual copter -->
+			<slot>6</slot>
+			<dx>1</dx>
+			<dy>1</dy>
+			<dz>1</dz>
+			<connect>COM7,57600</connect> <!-- tcp:192.168.0.6:5760 -->	
+			<adsb>1</adsb> <!-- 0 if disabled, 1 if enabled -->
+		</copter>
+        <copter id="Soar1ng:8">		
+			<enabled>0</enabled>
+			<type>real</type>  <!-- sitl for simulation, real for actual copter -->
+			<slot>2</slot>
+			<dx>1</dx>
+			<dy>1</dy>
+			<dz>1</dz>
+			<connect>COM7,57600</connect> <!-- tcp:192.168.0.6:5760 -->	
+			<adsb>1</adsb> <!-- 0 if disabled, 1 if enabled -->
+		</copter>
+
+		<copter id="Denny's Copter">		
+			<enabled>0</enabled>
+			<type>real</type>  <!-- sitl for simulation, real for actual copter -->
+			<slot>4</slot>
+			<dx>1</dx>
+			<dy>1</dy>
+			<dz>1</dz>
+			<connect>tcp:192.168.2.113:11000</connect> <!-- tcp:192.168.0.6:5760 -->	
+			<adsb>1</adsb> <!-- 0 if disabled, 1 if enabled -->
+		</copter>
+        
+
+		<copter id="S1">		
+			<enabled>0</enabled>
+			<type>real</type>  <!-- sitl for simulation, real for actual copter -->
+			<slot>1</slot>
+			<dx>1</dx>
+			<dy>1</dy>
+			<dz>1</dz>
+			<connect>tcp:192.168.2.113:11000</connect> <!-- tcp:192.168.0.6:5760 -->	
+			<adsb>1</adsb> <!-- 0 if disabled, 1 if enabled -->
+		</copter>
+
+		<copter id="S2">		
+			<enabled>0</enabled>
+			<type>real</type>  <!-- sitl for simulation, real for actual copter -->
+			<slot>2</slot>
+			<dx>1</dx>
+			<dy>1</dy>
+			<dz>1</dz>
+			<connect>tcp:192.168.2.113:11010</connect> <!-- tcp:192.168.0.6:5760 -->	
+			<adsb>1</adsb> <!-- 0 if disabled, 1 if enabled -->
+		</copter>
+        
+
+		<copter id="S3">		
+			<enabled>0</enabled>
+			<type>real</type>  <!-- sitl for simulation, real for actual copter -->
+			<slot>3</slot>
+			<dx>1</dx>
+			<dy>1</dy>
+			<dz>1</dz>
+			<connect>tcp:192.168.2.113:11030</connect> <!-- tcp:192.168.0.6:5760 -->	
+			<adsb>1</adsb> <!-- 0 if disabled, 1 if enabled -->
+		</copter>
+
+		<copter id="S4">		
+			<enabled>0</enabled>
+			<type>real</type>  <!-- sitl for simulation, real for actual copter -->
+			<slot>4</slot>
+			<dx>1</dx>
+			<dy>1</dy>
+			<dz>1</dz>
+			<connect>tcp:192.168.2.113:11040</connect> <!-- tcp:192.168.0.6:5760 -->	
+			<adsb>1</adsb> <!-- 0 if disabled, 1 if enabled -->
+		</copter>
+        
+
+		<copter id="S5">		
+			<enabled>0</enabled>
+			<type>real</type>  <!-- sitl for simulation, real for actual copter -->
+			<slot>5</slot>
+			<dx>1</dx>
+			<dy>1</dy>
+			<dz>1</dz>
+			<connect>tcp:192.168.2.113:11050</connect> <!-- tcp:192.168.0.6:5760 -->	
+			<adsb>1</adsb> <!-- 0 if disabled, 1 if enabled -->
+		</copter>
+
+		<copter id="S6">		
+			<enabled>0</enabled>
+			<type>real</type>  <!-- sitl for simulation, real for actual copter -->
+			<slot>6</slot>
+			<dx>1</dx>
+			<dy>1</dy>
+			<dz>1</dz>
+			<connect>tcp:192.168.2.113:11060</connect> <!-- tcp:192.168.0.6:5760 -->	
+			<adsb>1</adsb> <!-- 0 if disabled, 1 if enabled -->
+		</copter>
+
+        <!-- SITLs -->
+        <copter id="GLORY">		
+			<enabled>1</enabled>
+			<type>sitl</type>  <!-- sitl for simulation, real for actual copter -->
+			<slot>1</slot>
+			<dx>1</dx>
+			<dy>1</dy>
+			<dz>1</dz>
+			<connect>tcp:192.168.2.151:8780</connect> <!-- tcp:192.168.0.6:5760 -->	
+			<adsb>1</adsb> <!-- 0 if disabled, 1 if enabled -->
+		</copter>
+        <copter id="AWAITS">		
+			<enabled>1</enabled>
+			<type>sitl</type>  <!-- sitl for simulation, real for actual copter -->
+			<slot>2</slot>
+			<dx>1</dx>
+			<dy>1</dy>
+			<dz>1</dz>
+			<connect>tcp:192.168.2.151:8780</connect> <!-- tcp:192.168.0.6:5760 -->	
+			<adsb>1</adsb> <!-- 0 if disabled, 1 if enabled -->
+		</copter>
+        <copter id="YOU">		
+			<enabled>1</enabled>
+			<type>sitl</type>  <!-- sitl for simulation, real for actual copter -->
+			<slot>3</slot>
+			<dx>1</dx>
+			<dy>1</dy>
+			<dz>1</dz>
+			<connect>tcp:192.168.2.151:8780</connect> <!-- tcp:192.168.0.6:5760 -->	
+			<adsb>1</adsb> <!-- 0 if disabled, 1 if enabled -->
+		</copter>
+		<copter id="!">		
+			<enabled>1</enabled>
+			<type>sitl</type>  <!-- sitl for simulation, real for actual copter -->
+			<slot>4</slot>
+			<dx>1</dx>
+			<dy>1</dy>
+			<dz>1</dz>
+			<connect>tcp:192.168.2.151:8780</connect> <!-- tcp:192.168.0.6:5760 -->	
+			<adsb>1</adsb> <!-- 0 if disabled, 1 if enabled -->
+		</copter>
+	</copters>
+
+	<etc>
+		<!-- Arena Parameters (meters) -->
+		<arena>
+			<width>10.39</width>
+			<height>7.85</height>
+		</arena>
+
+		<!-- Takeoff Parameters -->
+		<takeoff>
+			<alt>2</alt> <!-- takeoff altitude in meters -->
+		</takeoff>
+
+		<!-- Default values for taking stepps -->
+		<increment>
+			<x-inc>0.5</x-inc>
+			<y-inc>0.5</y-inc>
+			<z-inc>0.5</z-inc>
+			<head-inc>5</head-inc> 
+		</increment>
+		
+		<!-- ActiveMQ Parameters -->
+		<!-- Will probably be modified/changed during game day -->
+		<activemq>
+			<enabled>0</enabled> <!-- 0 if not enabled, 1 if enabled -->
+			<ipaddress>10.64.127.19</ipaddress> <!-- Swat = 10.64.127.10, Scott = 10.10.58.85 --> 
+			<portnumber>61617</portnumber>
+		</activemq>
+
+		<copter-param>
+			<!-- A template for setting parameters <parameterNameHere>ParameterValue</parameterNameHere> -->
+			<!-- <LAND_SPEED>200</LAND_SPEED> --> <!--Test parameter example-->
+<!--             <ARMING_CHECK>1</ARMING_CHECK>
+            <COMPASS_AUTODEC>0</COMPASS_AUTODEC>
+            <SR1_EXT_STAT>2</SR1_EXT_STAT>
+            <SR1_EXTRA1>2</SR1_EXTRA1>
+            <SR1_EXTRA2>2</SR1_EXTRA2>
+            <SR1_POSITION>3</SR1_POSITION>
+            <WPNAV_ACCEL>250</WPNAV_ACCEL>
+            <WPNAV_LOIT_JERK>1000</WPNAV_LOIT_JERK>
+            <WPNAV_LOIT_SPEED>100</WPNAV_LOIT_SPEED>
+            <WPNAV_SPEED>100</WPNAV_SPEED>
+            <WPNAV_SPEED_UP>75</WPNAV_SPEED_UP>
+            <AHRS_EKF_TYPE>1</AHRS_EKF_TYPE>
+            <COMPASS_OFS2_X>1</COMPASS_OFS2_X>
+            <COMPASS_OFS2_Y>1</COMPASS_OFS2_Y>
+            <COMPASS_OFS2_Z>1</COMPASS_OFS2_Z>
+            <COMPASS_PRIMARY>1</COMPASS_PRIMARY>
+            <COMPASS_USE>0</COMPASS_USE>
+            <COMPASS_USE2>1</COMPASS_USE2>
+            <LOG_BITMASK>176127</LOG_BITMASK>
+            <FLIP_CLIMB_ANGLE>-1400</FLIP_CLIMB_ANGLE>
+            <FLIP_CLIMB_TIME>125</FLIP_CLIMB_TIME>
+            <FLIP_COAST_END>-9000</FLIP_COAST_END>
+            <FLIP_COAST_START>9000</FLIP_COAST_START>
+            <FLIP_MAX_TIME>3000</FLIP_MAX_TIME>
+            <FLIP_RATE>160000</FLIP_RATE>
+            <FLIP_RECOV_ANG>500</FLIP_RECOV_ANG>
+            <FLIP_THROTTLE>800</FLIP_THROTTLE>
+            <ATC_ACCEL_R_MAX>162000</ATC_ACCEL_R_MAX>
+            <BATT_CAPACITY>5000</BATT_CAPACITY>
+            <EK2_ENABLE>0</EK2_ENABLE>
+            <RTL_ALT>50000</RTL_ALT>
+            <FS_GCS_ENABLE>0</FS_GCS_ENABLE> -->
+		</copter-param>
+	</etc>
+
+</config>

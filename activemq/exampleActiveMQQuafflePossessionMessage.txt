@@ -1,0 +1,5 @@
+"<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+	<QuafflePossession xmlns="http://www.ngc.com/quad/quadlink/icd">
+		<SourceID>Simulink Game Server</SourceID>
+		<AVID>Dispenser2</AVID>
+	</QuafflePossession>"
